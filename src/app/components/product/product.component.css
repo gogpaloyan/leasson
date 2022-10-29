@@ -1,0 +1,25 @@
+img{
+  width: 200px;
+  height: 200px;
+}
+.productApps{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+.product{
+  margin: 20px;
+}
+.inp{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.inp input{
+  width: 60%;
+  height: 20px;
+  background-color: wheat;
+  border-radius: 5px;
+  color: black;
+}

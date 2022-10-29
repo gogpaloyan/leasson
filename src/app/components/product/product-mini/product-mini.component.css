@@ -1,0 +1,51 @@
+
+.product{
+ background-color: wheat;
+  width: 500px;
+  border-radius: 10px;
+}
+.captionimg{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.price{
+  padding: 10px;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  background-color: #ff4c20;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.discription{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+  margin: 25px;
+}
+.btn{
+  text-align: center;
+}
+.btn button{
+  background-color: coral;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 150px;
+
+}
+.category{
+ padding: 10px;
+  margin: 10px;
+  background-color: brown;
+  border-radius: 10px;
+}

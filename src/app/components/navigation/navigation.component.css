@@ -1,0 +1,19 @@
+.navs{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: bisque;
+  padding: 5px;
+  border-radius: 10px;
+}
+.navs a{
+  text-decoration: none;
+  color: black;
+  background-color: coral;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+nav .active{
+  color: red;
+}

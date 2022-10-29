@@ -1,0 +1,22 @@
+<p>myapp works!</p>
+<div [ngClass]="{apps: true}">
+  <div [ngClass]="{todoApp: true}">
+    <div [ngClass]="{inputBtn: true}">
+      <input type="text" [(ngModel)]="text">
+      <button (click)="onAdd(text)">Add</button>
+    </div>
+    <div *ngFor="let item of items; let even = even; let last = last let first = first let odd = odd"
+         [ngClass]="{todoList: true, even: even, odd: odd,last:last, first: first}">
+      <label [ngClass]="{todoLists: true}">
+        <input type="checkbox" [(ngModel)]="item.completed">
+        {{item.title}}
+        <button (click)="onDelete(item.id)">X</button>
+      </label>
+
+    </div>
+    <div [ngClass]="{footer: true}">
+      <span> completed {{getCount()}} / {{items.length}}</span>
+      <button (click)="cleare()">Cleare</button>
+    </div>
+  </div>
+</div>

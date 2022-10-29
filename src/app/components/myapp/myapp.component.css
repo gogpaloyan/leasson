@@ -1,0 +1,71 @@
+.apps{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.todoApp{
+  background-color: bisque;
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: brown 10px 5px;
+}
+
+.inputBtn{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.inputBtn input{
+  width: 250px;
+  border-radius: 10px;
+  background-color: snow;
+  height: 25px;
+  font-size: 18px;
+}
+button{
+  width: 70px;
+  background-color: coral;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.todoLists{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 10px 0;
+}
+.footer span{
+  font-size: 18px;
+}
+.odd{
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.even{
+  background-color: brown;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: red;
+  color: black;
+}
+button:active{
+  width: 60px;
+  transition: 0.3s;
+}
+.first{
+  background-color: #ff4c20;
+}
+.last{
+  background-color: #ff154d;
+}

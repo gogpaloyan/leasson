@@ -1,0 +1,31 @@
+<div [ngClass]="{productApp: true}">
+<div [ngClass]="{product: true}">
+
+  <div [ngClass]="{captionimg: true}">
+    <div>Product number N/{{product.id}}</div>
+    <div (click)="onCount(product.id)"><img [alt]="product.title" [src]="product.image"></div>
+    <div [ngClass]="{price: true}"><b>{{product.price | currency:"AMD "}}</b></div>
+  </div>
+  <div [ngClass]="{btn: true}">
+    <button (click)="show = !show">{{show ? "Less description " : "Show description"}} </button>
+  </div>
+  <div *ngIf="show"
+       [ngClass]="{discription: true}">
+    {{product.description}}
+  </div>
+
+  <div [ngClass]="{category: true}">
+  <div >
+   <b> category is{{product.category}}</b>
+  </div>
+
+  <div>
+    <b> Reting * {{product.rating.rate | number: "2.2-4"}}
+    </b>
+    <div><b>count products {{product.rating.count}}</b></div>
+  </div>
+    <app-morelesstext [max] = "max" [text]="product.title"></app-morelesstext>
+
+  </div>
+</div>
+</div>
