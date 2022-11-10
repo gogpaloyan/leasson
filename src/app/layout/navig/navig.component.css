@@ -1,0 +1,14 @@
+.nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.nav a{
+  text-decoration: none;
+  background-color: coral;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: black;
+}

@@ -1,10 +1,10 @@
 <div>
   <nav [ngClass]="{navs: true}">
-    <a routerLink="" routerLinkActive="active"
-       [routerLinkActiveOptions]="{exact: true}" >App</a>
+    <a routerLink="apps" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">App</a>
     <a routerLink="myapp" routerLinkActive="active" >MyApp</a>
     <a routerLink="product" routerLinkActive="active" >Product</a>
-    <a routerLink="**" routerLinkActive="active" >Profile</a>
+    <a routerLink="profile" routerLinkActive="active" >Profile</a>
+    <a [ngClass]="{logout: true}" (click)="logout()" >LogOut</a>
   </nav>
-  <router-outlet></router-outlet>
+
 </div>

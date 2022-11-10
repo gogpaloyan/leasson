@@ -15,6 +15,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
 }
 .inputBtn input{
   width: 250px;
@@ -22,6 +23,7 @@
   background-color: snow;
   height: 25px;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 button{
   width: 70px;
@@ -68,4 +70,10 @@ button:active{
 }
 .last{
   background-color: #ff154d;
+}
+.error{
+  padding: 5px;
+  color: white;
+  background-color: brown;
+  border-radius: 10px;
 }

@@ -1,0 +1,33 @@
+.form{
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: brown 10px 5px;
+  padding: 10px;
+}
+
+
+.input{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+}
+
+.btn button{
+  background-color: dimgrey;
+  padding: 10px;
+  width: 90px;
+  border-radius: 10px;
+}
+.btn button:active{
+  background-color: red;
+}
+ .error{
+   color: red;
+
+   background-color: antiquewhite;
+   border-radius: 10px;
+ }

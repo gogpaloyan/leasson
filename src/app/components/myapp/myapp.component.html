@@ -1,12 +1,15 @@
-<p>myapp works!</p>
 <div [ngClass]="{apps: true}">
   <div [ngClass]="{todoApp: true}">
     <div [ngClass]="{inputBtn: true}">
       <input type="text" [(ngModel)]="text">
       <button (click)="onAdd(text)">Add</button>
+      <div *ngIf="error.length > 0"><span [ngClass]="{error: true}">{{error}}</span></div>
     </div>
+
+
     <div *ngFor="let item of items; let even = even; let last = last let first = first let odd = odd"
          [ngClass]="{todoList: true, even: even, odd: odd,last:last, first: first}">
+
       <label [ngClass]="{todoLists: true}">
         <input type="checkbox" [(ngModel)]="item.completed">
         {{item.title}}

@@ -1,0 +1,57 @@
+<form [formGroup]="myFormRegister"
+      novalidate
+      [ngClass]="{form: true}"
+      (ngSubmit)="submit()"
+>
+  <h1>Register</h1>
+
+  <div [ngClass]="{input: true}">
+    <label>Login </label>
+    <input type="email"
+           placeholder="username"
+            name="userName"
+           id="userName"
+           formControlName="userName"
+    >
+    <span
+      [ngClass]="{error: true}"
+      *ngIf="myFormRegister.controls['userName'].invalid &&
+       myFormRegister.controls['userName'].touched"
+
+    >Error username</span>
+  </div>
+  <div [ngClass]="{input: true}">
+    <label>Password </label>
+    <input type="password"
+           placeholder="password"
+           formControlName="userPassword"
+
+    >
+    <span
+      [ngClass]="{error: true}"
+      *ngIf="myFormRegister.controls['userPassword'].invalid &&
+       myFormRegister.controls['userPassword'].touched"
+
+    >Error password</span>
+  </div>
+  <div [ngClass]="{input: true}">
+    <label>Repeat password </label>
+    <input type="password"
+           placeholder="repeat password"
+           formControlName="userPasswordR"
+
+    >
+    <span
+      [ngClass]="{error: true}"
+      *ngIf="myFormRegister.controls['userPasswordR'].invalid &&
+       myFormRegister.controls['userPasswordR'].touched"
+
+    >Error repeat password</span>
+
+  </div>
+  <span    [ngClass]="{error: true}">{{error}}</span>
+  <div [ngClass]="{btn: true}">
+    <button
+    >Add</button>
+  </div>
+</form>

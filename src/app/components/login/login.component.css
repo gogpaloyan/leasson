@@ -1,0 +1,33 @@
+.forms{
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: brown 10px 5px;
+  padding: 10px;
+}
+
+.input{
+  margin: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.input > input{
+  background-color: burlywood;
+}
+.error{
+  color: red
+}
+.btn button{
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn button:hover{
+  background-color: burlywood;
+
+}
