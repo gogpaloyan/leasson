@@ -11,6 +11,7 @@ import {AuthLoginPageComponent} from "./layout/auth-login-page/auth-login-page.c
 import {HomesLoginPageComponent} from "./layout/homes-login-page/homes-login-page.component";
 import {RegisterComponent} from "./components/register/register.component";
 import {AuthGuardService} from "./services/auth-guard.service";
+import {PersoncomComponent} from "./components/product/personcom/personcom.component";
 
 const routes: Routes = [
 
@@ -30,6 +31,7 @@ const routes: Routes = [
       {path:"apps", component: AppsComponent},
       {path:"myapp", component: MyappComponent},
       {path:"product", component: ProductComponent},
+      {path:"gg/:name/:id", component: PersoncomComponent},
       {path:"profile", component: ProfileComponent},
     ]}
 ];

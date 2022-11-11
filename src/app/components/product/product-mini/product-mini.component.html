@@ -3,7 +3,7 @@
 
   <div [ngClass]="{captionimg: true}">
     <div>Product number N/{{product.id}}</div>
-    <div (click)="onCount(product.id)"><img [alt]="product.title" [src]="product.image"></div>
+    <div (click)="getRoute(product.id, 'product')"><img [alt]="product.title" [src]="product.image"></div>
     <div [ngClass]="{price: true}"><b>{{product.price | currency:"AMD "}}</b></div>
   </div>
   <div [ngClass]="{btn: true}">
@@ -29,3 +29,5 @@
   </div>
 </div>
 </div>
+
+

@@ -22,6 +22,7 @@ import {AuthService} from "./services/auth.service";
 import { RegisterComponent } from './components/register/register.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import {CarouselComponent} from "./components/apps/carusel/carusel.component";
+import {PersoncomComponent} from "./components/product/personcom/personcom.component";
 
 @NgModule({
   declarations: [
@@ -39,6 +40,8 @@ import {CarouselComponent} from "./components/apps/carusel/carusel.component";
     NavigComponent,
     RegisterComponent,
     CarouselComponent,
+    PersoncomComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import {CarouselComponent} from "./components/apps/carusel/carusel.component";
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    CarouselModule
+    CarouselModule,
+
   ],
   providers: [AppstorService, ProductsappService, AuthService],
   bootstrap: [AppComponent]

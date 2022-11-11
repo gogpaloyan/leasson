@@ -23,9 +23,9 @@ export class ProductsappService {
     return this.http.get<productinter>('https://fakestoreapi.com/products',
       {
         params: new HttpParams({
-          fromObject: {limit: 7}
+          fromObject: {limit: 15}
         })
-      }).pipe(delay(500))
+      }).pipe(delay(100))
   }
 
   constructor(private http: HttpClient) {
